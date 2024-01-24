@@ -1,0 +1,274 @@
+@font-face {
+    font-family: 'policeHeader';
+    src: url('TechnoRaceItalic-eZRWe.otf');
+  }
+  
+  @font-face {
+    font-family: 'dosisHeader';
+    src: url('Dosis.ttf');
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInTop {
+    0% {
+      opacity: 0;
+      transform: translate3d(0, -20px, 0);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+
+  
+  header {
+    padding: 30px;
+    border: 5px solid;
+    border-image-slice: 10;
+    border-image-source: linear-gradient(to left, #C8141F, #001C4E);
+    background-color: transparent;
+    background-size: cover;
+    color: #fffffffc;
+    text-align: center;
+    font-size: 28px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    animation: fadeIn 1.2s;
+    padding-top: 0;
+  }
+  nav {
+
+    text-align: center;
+    background-color: transparent;
+    overflow: hidden;
+    width: 80%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+  }
+  
+  nav a {
+    border: 5px solid;
+    border-image-slice: 1;
+    border: #C8141F;
+    list-style: none;
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 17px;
+    animation: fadeInTop 0.8s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  nav a:hover {
+    border-style: solid;
+    border: color(white);
+    background-color: #2f2f2f;
+    color: rgb(255, 255, 255);
+    transition: color 0.5s ease;
+  }
+  
+  nav a.active {
+    border-style: solid;
+    border: color(white);
+    background-color: transparent;
+    color: white;
+  }
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url(Images/stars.png);
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  .left_right{
+    display: flex;
+    justify-content: center;
+  }
+
+  .container{
+    position:relative;
+    width:35%;
+    height:35%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .image {
+    display: block;
+    border-radius: 15%;
+    width:100%;
+    height:auto;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .8s ease;
+    background: linear-gradient(#b5cafb, #00113b);
+    border-radius: 15%;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+  .text {
+    text-align: center;
+    font-family: 'Franklin Gothic Heavy';
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+
+  }
+
+
+  .text_exp {
+    text-align: center;
+    margin-top:40%;
+    font-family:'Franklin Gothic Heavy';
+    font-size: 3vw;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  }
+
+  .text_sousexp{
+    text-align: center;
+    margin-bottom:20%;
+    font-family:'Franklin Gothic Heavy';
+    font-size: 1.5vw;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+  }
+  
+
+
+
+
+  *{
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+  }
+
+
+  footer{
+    background-color: #111;
+  }
+
+  .footerContainer{
+    width:100%;
+    padding:70px 30px 20px;
+  }
+
+  .logos{
+    display: flex;
+    justify-content: center;
+  }
+
+  .logos a{
+    text-decoration: none;
+    padding:20px;
+    background-color: white;
+    margin:10px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    width: 70px;
+    height:70px;
+  }
+
+  .logos a i{
+    color:black;
+    font-size:200%;
+  }
+
+  .logos a:hover{
+    background-color: #111;
+    transition:0.5s;
+  }
+
+  .logos a:hover i{
+    color:white;
+    transition: 0.5s;
+  }
+
+  .footerNav{
+    margin:30px 0;
+  }
+
+  .logos a img{
+    size:69px;
+  }
+
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerNav ul li a{
+    color: white;
+    margin:20px;
+  }
+
+  .footerBottom{
+    color:white;
+    justify-content: center;
+    display:flex;
+  }
+
+
+
+
+
+
+
+  .presentation h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Heavy';
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
+    font-size: 400%;
+  }
+
+  .presentation p{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Franklin Gothic Heavy';
+    color: rgb(255,255,255);
+    
+  }
