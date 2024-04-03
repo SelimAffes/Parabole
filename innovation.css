@@ -209,7 +209,7 @@
 
   .footerContainer{
     width:100%;
-    padding:70px 30px 20px;
+    padding:30px 30px 20px;
   }
 
   .logos{
@@ -266,26 +266,31 @@
     color:white;
     justify-content: center;
     display:flex;
+    margin-top: 20px;
   }
 
 
 
-  .presentation h1{
+  .presentation {
     text-align: center;
     font-family: 'Franklin Gothic Heavy';
     color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
-    font-size: 400%;
+    font-size: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 
   .presentation p{
     text-align: center;
-    margin-right: 25%;
-    margin-left: 25%;
     font-family: 'Franklin Gothic Heavy';
     color: rgb(255,255,255);
     line-height: 150%;
     
+  }
+
+  .presentation h1{
+    font-size: 6vw;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), 5px 5px 70px rgba(255, 255, 255, 0.5);
   }
 
 
@@ -298,7 +303,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 700px;
+  max-width: 70vw;
   position: relative;
   margin: auto;
   border-radius: 25%;
@@ -380,6 +385,20 @@ img {vertical-align: middle;}
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 600px) {
   .prev, .next,.text {font-size: 11px}
+
+  .presentation p{
+  margin-right: 10vw;
+  margin-left: 10vw;
+  }
+
+  nav{
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 600px){
+.mobile-item { display: none; }
+
 }

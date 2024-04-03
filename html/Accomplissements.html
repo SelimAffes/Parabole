@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../innovation.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <script src="../Javascript.js"></script>
+        <title>Horizon</title>
+    </head>
+
+    <body onload="plusSlides(1)">
+    <header>
+        <h1 style="margin-top: 25px;">Horizon Astronomy Club</h1>
+      <nav>
+        <a href="../index.html">Accueil</a>
+        <a href="Membres.html">Membres</a>
+        <a class="active">Accomplissements</a>
+        <a href="Parabole.html">Projet Parabole</a>
+      </nav>
+    </header>
+      <div style="margin-bottom: 55px; margin-top: 40px;">
+        <div class="text" style="font-size: 400%;">Un groupe ayant</div>
+        <div class="text" style="font-size: 300%;">Tout fait!</div>
+      </div>
+
+      <div class="presentation">
+        <h1>Un voyage d'observation au désert</h1>
+        <br>
+        <p>
+          Durant l'hiver de 2023, le Club est allé à Douiret, au Sud de la Tunisie, pour suivre une formation d'observation stellaire
+          dans ce magnifique endroit. En effet, c'était un endroit propice à l'observation de notre merveilleux ciel puisque, loin de
+          toute civilisation, la pollution lumineuse y était quasi-inexistante. Nous avons été accueillis dans la Résidence Douiret 
+          les Troglodytes, un site aussi chalereux qu'unique!
+        </p>
+        
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="Images/desert.jpg" class="contimg">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+  
+        <br>
+  
+        <div style="text-align:center; margin-bottom: 50px;">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+        </div>
+
+      <br><br><br><br>
+      <footer>
+        <div class="footerContainer">
+          <div class="logos">
+            <a href="https://www.instagram.com/horizon_astronomy_club_pmf/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com/@club.horizon.pmf" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://ert.tn/pmf" style="padding:0;" target="_blank"><img src="../Images/ert.png"></a>
+            <a href="https://cnes.fr" style="padding:10px;" target="_blank"><img src="../Images/cnes.png"></a>
+          </div>
+          <div class="footerBottom">
+            <p>Copyright &copy; 2024 Etablissement Régional de Tunis. Tous droits réservés <br>copyright 2 &copy;</p>
+          </div>
+        </div>
+      </footer>
+    </body>
+</html>
