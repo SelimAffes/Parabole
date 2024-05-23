@@ -303,7 +303,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 70vw;
+  max-width: 40vw;
   position: relative;
   margin: auto;
   border-radius: 25%;
@@ -311,6 +311,7 @@ img {vertical-align: middle;}
 
 .contimg {
   width:100%;
+  height:100%;
   border-radius: 25%;
 }
 
